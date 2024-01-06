@@ -7,7 +7,9 @@ import '../styles/profile.css';
 
 function Profile() {
   const {user,isAuthenticated}=useContext(context)
+ 
   if(!isAuthenticated)return (toast.error("Login First"),<Navigate to={"/login"} />)
+ 
 
   return ( 
     <div className='profile-container'>
@@ -16,7 +18,10 @@ function Profile() {
   <h3>🎃{user?.email}</h3>
     </div>
     </div>
+
+
   )
+
 
 }
 
