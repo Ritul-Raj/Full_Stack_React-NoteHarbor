@@ -14,9 +14,13 @@ function Profile() {
 
   return ( 
     <div className='profile-container'>
+   
   <div className='profile'>
-  <h1>{user?.name}🎉</h1>
-  <h3>🎃{user?.email}</h3>
+  <h1>Welcome to ToDo/\pp 🎉</h1>
+  <br/>
+  <h2>Username☃️: {user?.name}</h2>
+  <br/>
+  <h3>Email: {user?.email}</h3>
     </div>
     </div>
 
