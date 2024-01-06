@@ -1,0 +1,68 @@
+
+  .home2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.todoitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 50%;
+    height: 9vh;
+  }
+  .todoitems:hover {
+    transform: scale(1.02);
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .left h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .left p {
+    margin: 0;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  .right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #c0392b;
+  }
+  
+  input[type='checkbox'] {
+    cursor: pointer;
+    transform: scale(2);
+  }
+  
