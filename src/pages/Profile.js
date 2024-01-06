@@ -8,6 +8,7 @@ import '../styles/profile.css';
 function Profile() {
   const {user,isAuthenticated}=useContext(context)
  
+ 
   if(!isAuthenticated)return (toast.error("Login First"),<Navigate to={"/login"} />)
  
 

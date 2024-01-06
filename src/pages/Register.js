@@ -44,6 +44,7 @@ const {isAuthenticated,setisAuthenticated,loading ,setloading}=useContext(contex
     return (
         <div className='login'>
     <section>
+    <h2>Get Started♨️ </h2>
     <form onSubmit={submitHandler}>
     <input type='text' value={name} onChange={(event)=>setname(event.target.value)} placeholder='Name'></input>
     <input type='email' value={email} onChange={(event)=>setemail(event.target.value)} placeholder='Email'></input>

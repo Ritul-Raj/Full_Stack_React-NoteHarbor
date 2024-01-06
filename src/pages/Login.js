@@ -47,11 +47,13 @@ function Login() {
 
   return (
     <  div className='login'>
+    
 <section>
+<h2>User Login🐼 </h2>
 <form onSubmit={submitHandler}>
 <input type='email' value={email} onChange={(event)=>setemail(event.target.value)} placeholder='Email'></input>
 <input type='password' value={password} onChange={(event)=>setpassword(event.target.value)}  placeholder='Password'></input>
-<button type='submit' disabled={loading} >LOGIN</button>
+<button type='submit' disabled={loading} >Log In</button>
 <h4>Or</h4>
 <Link className='link' to="/register">Sign Up</Link>
 </form>
