@@ -41,7 +41,7 @@ setloading(false);
            T🛟D🛟/\pp
     </div>
    <article>
-   <Link  className='link'  to={"/"}>Home</Link>
+   <Link  className='link'  to={"/"}>💡Notes</Link>
    <Link className='link' to={"/profile"}>Profile</Link>
    {isAuthenticated ? ( <button disabled={loading} onClick={logoutHandler}>Logout</button>) :
        (<Link  className='link'  to={"/login"}>Login</Link>)}

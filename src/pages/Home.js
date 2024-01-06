@@ -92,8 +92,8 @@ if(!isAuthenticated)return (<Navigate to={"/login"} />)
     <div className='container'>
 <section>
 <form onSubmit={submitHandler}>
-<input type='text' value={title} onChange={(event)=>setTitle(event.target.value)} placeholder='Title'></input>
-<input type='text' value={description} onChange={(event)=>setDescription(event.target.value)} placeholder='Description'></input>
+<input type='text' value={title} onChange={(event)=>setTitle(event.target.value)} placeholder='Add @ Title'></input>
+<input type='text' value={description} onChange={(event)=>setDescription(event.target.value)} placeholder='Add Description'></input>
 <button type='submit'>➕</button>
 </form>
 </section>
@@ -102,7 +102,8 @@ if(!isAuthenticated)return (<Navigate to={"/login"} />)
   <div>
 {
   task?.map((i)=>(
-  <ToDoItems key={i._id} title={i.title} description={i.description} isCompleted={i.isCompleted} updateHandler={updateHandler} deleteHandler={deleteHandler} id={i._id}  />
+   
+  <ToDoItems key={i._id} title={i.title} description={i.description} isCompleted={i.isCompleted} updateHandler={updateHandler} deleteHandler={deleteHandler} id={i._id} createdAt={i.createdAt} />
 ))
 }
   </div>
