@@ -30,9 +30,6 @@ const {setuser,setisAuthenticated}=useContext(context)
     
  },[])
 
-
-
-
   return (
 <BrowserRouter>
 <Header/> 

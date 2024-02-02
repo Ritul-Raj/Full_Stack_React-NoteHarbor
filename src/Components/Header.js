@@ -1,6 +1,5 @@
 
 import React, { useContext } from 'react'
-
 import '../styles/header.css';
 import { Link } from 'react-router-dom'
 import { context } from '../index';
@@ -38,7 +37,7 @@ setloading(false);
   return (
     <nav className='header'>
     <div className='logo'>
-           T🛟D🛟/\pp
+           NoteHarbor🖊️
     </div>
    <article>
    <Link  className='link'  to={"/"}>💡Notes</Link>
