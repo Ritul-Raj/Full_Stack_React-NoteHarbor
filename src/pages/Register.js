@@ -17,7 +17,9 @@ const {isAuthenticated,setisAuthenticated,loading ,setloading}=useContext(contex
         event.preventDefault ();
         setloading(true)
         try {
-             const {data}=await axios.post("https://nodejstodoapp-vkru.onrender.com/api/v1/user/register",
+            //  const {data}=await axios.post("https://nodejstodoapp-vkru.onrender.com/api/v1/user/register",
+            const {data}=await axios.post("http://localhost:4000/api/v1/user/register",
+
     {
     name,email,password
     },

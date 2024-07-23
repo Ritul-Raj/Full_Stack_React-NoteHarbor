@@ -14,7 +14,8 @@ const [useeffctRefresh,setuseeffectRefresh]=useState(false);
 const {isAuthenticated}=useContext(context);
 const updateHandler= async(id)=>{
   try { 
-    const {data}=await axios.put(`https://nodejstodoapp-vkru.onrender.com/api/v1/task/${id}`,
+    // const {data}=await axios.put(`https://nodejstodoapp-vkru.onrender.com/api/v1/task/${id}`,
+    const {data}=await axios.put(`http://localhost:4000/api/v1/task/${id}`,
 {},
 {
 withCredentials:true
@@ -31,7 +32,8 @@ toast.error(error.response.data.message);
 }
 const deleteHandler=async(id)=>{
   try { 
-    const {data}=await axios.delete(`https://nodejstodoapp-vkru.onrender.com/api/v1/task/${id}`,
+    // const {data}=await axios.delete(`https://nodejstodoapp-vkru.onrender.com/api/v1/task/${id}`,
+    const {data}=await axios.delete(`http://localhost:4000/api/v1/task/${id}`,
 {
 withCredentials:true
 }
@@ -51,7 +53,10 @@ const submitHandler=async(event)=>{
   event.preventDefault();
 
 try {
-  const {data}=await axios.post("https://nodejstodoapp-vkru.onrender.com/api/v1/task/new",{
+  const {data}=await axios.post(
+    // "https://nodejstodoapp-vkru.onrender.com/api/v1/task/new"
+    "http://localhost:4000/api/v1/task/new"
+    ,{
     title,
     description
   },{
@@ -74,7 +79,10 @@ setDescription("");
 }
 
 useEffect(()=>{
-axios.get("https://nodejstodoapp-vkru.onrender.com/api/v1/task/my",{
+axios.get(
+  // "https://nodejstodoapp-vkru.onrender.com/api/v1/task/my"
+   "http://localhost:4000/api/v1/task/my"
+  ,{
   withCredentials:true
 }).then((res)=>{
  setTask(res.data.tasks)

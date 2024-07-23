@@ -15,7 +15,9 @@ const logoutHandler=async(event)=>{
 setloading(true);
 
   try {
-      await axios.get("https://nodejstodoapp-vkru.onrender.com/api/v1/user/logout",
+      // await axios.get("https://nodejstodoapp-vkru.onrender.com/api/v1/user/logout",
+      await axios.get("http://localhost:4000/api/v1/user/logout",
+
 {
   
   withCredentials:true
